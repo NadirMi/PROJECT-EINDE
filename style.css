@@ -133,17 +133,26 @@ nav {
 
 
 .hero {
-    height: 100vh;
-    background-image: url('img/DSC03743.jpg');
-    background-size: cover;
-    background-position: center;
     position: relative;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: var(--color-secondary);
+    overflow: hidden;
 }
+
+.hero video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
 
 .hero::before {
     content: '';
@@ -453,6 +462,27 @@ footer {
     .section h2 {
         font-size: 32px;
     }
+
+    
+  .formul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 320px;
+    margin: 24px auto;
+    font-size: 18px;
+    padding: 18px 24px;
+    text-align: center;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    border: 2px solid var(--color-primary);
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  
+}
+
     
 }
 
@@ -514,13 +544,23 @@ footer {
         padding: 0 16px;
     }
     .formul {
-        display: block;
-        width: 100%;
-        font-size: 16px;
-        padding: 21px 0;
-        margin: 0px 0;
-        
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 16px;
+    padding: 16px 24px;
+    margin: 16px auto;
+    text-align: center;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    border: 2px solid var(--color-primary);
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    max-width: 300px;
+}
+
 
     .animatieBanner{
         display: none;
