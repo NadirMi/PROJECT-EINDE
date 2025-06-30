@@ -300,6 +300,7 @@ nav {
     font-weight: 500;
     cursor: pointer;
     position: relative;
+    text-align: center;
 }
 
 .faq-question::after {
@@ -307,6 +308,7 @@ nav {
     position: absolute;
     right: 24px;
     transition: transform 0.3s ease;
+    text-align: center;
 }
 
 .faq-answer {
